@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Empleado</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/empleados">Lista de Empleados</a></h3>
+            <h1>Crear Nuevo Empleado</h1>
+            <form action="/empleados/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Nombres</td>
+                            <td><input type="text" name="nombres" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido Paterno</td>
+                            <td><input type="text" name="ape_paterno" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido Materno</td>
+                            <td><input type="text" name="ape_materno" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><input type="text" name="sexo" /></td>
+                        </tr>
+                         <tr>
+                            <td>DNI</td>
+                            <td><input type="number" name="dni" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Celular</td>
+                            <td><input type="number" name="celular" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email" required /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Grabar" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
+<style>
+    body {
+        background-color: aquamarine;
+    }
+</style>

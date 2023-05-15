@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editar Empleado</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/empleados">Lista de Empleados</a></h3>
+            <h1>Editar Empleado</h1>
+            <form action="/empleados/update/{{ empleado._id }}" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>nombres</td>
+                            <td><input type="text" name="nombres" value="{{ empleado.nombres }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido Paterno</td>
+                            <td><input type="text" name="ape_paterno" value="{{ empleado.ape_paterno }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido Materno</td>
+                            <td><input type="text" name="ape_materno" value="{{ empleado.ape_materno }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><input type="text" name="sexo" value="{{ empleado.sexo }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>DNI</td>
+                            <td><input type="number" name="tamaño" value="{{ empleado.dni }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Celular</td>
+                            <td><input type="number" name="celular" value="{{ empleado.celular }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email" value="{{ empleado.email }}" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit">Update</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
